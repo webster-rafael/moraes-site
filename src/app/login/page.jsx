@@ -1,29 +1,20 @@
-'use client'
+"use client";
 import { useContext, useState } from "react";
 import { HouseContext } from "@/components/Search/houseContext";
 import { useRouter } from "next/router";
-import DarkMode from '@/components/DarkMode';
-import Link from 'next/link';
+import DarkMode from "@/components/DarkMode";
+import Link from "next/link";
 
 export default function Sobre() {
-const [name, setUserName] = useState('')
-const [foto, setFoto] = useState(null)
+  const [name, setUserName] = useState("");
+  const [foto, setFoto] = useState(null);
 
-const handleSubmit = (event) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-  localStorage.setItem('userName', name);
-  localStorage.setItem('userFoto', URL.createObjectURL(foto));
-
-    console.log(name, foto);
-
-}
-
-const handlePush = () => {
- 
-    handleSubmit()
-    event.preventDefault()
-}
-  
+    localStorage.setItem("userName", name);
+    localStorage.setItem("userFoto", URL.createObjectURL(foto));
+  };
 
   return (
     <main className='w-full flex justify-center items-center h-screen overflow-hidden'>
@@ -59,11 +50,13 @@ const handlePush = () => {
           </div>
 
           <div className='w-full flex justify-center text-center mb-6 lg:mb-0 mt-10'>
-            <h1 className='text-2xl font-medium text-slate-50'>Faça seu Login</h1>
+            <h1 className='text-2xl font-medium text-slate-50'>
+              Faça seu Login
+            </h1>
           </div>
           <div>
             <form
-            onSubmit={handleSubmit}
+              onSubmit={handleSubmit}
               className='flex flex-col gap-3 w-full mx-auto md:max-w-[30rem]'
               action=''
             >
@@ -86,7 +79,7 @@ const handlePush = () => {
                   </svg>
                 </div>
                 <input
-                onChange={(e) => setUserName(e.target.value)}
+                  onChange={(e) => setUserName(e.target.value)}
                   type='text'
                   name='name'
                   id='email-address-icon'
@@ -94,7 +87,6 @@ const handlePush = () => {
                   placeholder='Maria de Fátima'
                 />
               </div>
-              
 
               <label
                 htmlFor='email'
@@ -116,10 +108,8 @@ const handlePush = () => {
                   </svg>
                 </div>
                 <input
-                
                   type='email'
                   name='email'
-                  
                   id='email-address-icon'
                   className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                   placeholder='name@gmail.com'
@@ -127,19 +117,29 @@ const handlePush = () => {
               </div>
 
               <label
-                className='block text-sm font-medium dark:text-gray-50 text-white '
+                className='flex text-sm font-medium dark:text-gray-50 text-white '
                 htmlFor='user_avatar'
               >
                 Carregar Foto
               </label>
-              <input
-               onChange={(e) => setFoto(e.target.files[0])}
-              name='foto'
-                className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-                aria-describedby='user_avatar_help'
-                id='user_avatar'
-                type='file'
-              />
+              <div className='flex gap-3'>
+                <input
+                  onChange={(e) => setFoto(e.target.files[0])}
+                  name='foto'
+                  className='flex bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-3/5 ps-10 p-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                  aria-describedby='user_avatar_help'
+                  id='user_avatar'
+                  type='file'
+                />
+                 <button
+                type='submit'
+                className='flex justify-center items-center text-white  rounded-lg w-3/6 bg-blue-500'
+              >
+                Confirmar Foto
+              </button>
+                
+              </div>
+
               <div
                 className='mt-1 text-sm text-gray-500 dark:text-gray-500'
                 id='user_avatar_help'
@@ -173,28 +173,16 @@ const handlePush = () => {
                   </a>
                 </label>
               </div>
-              <div>
-                
-              </div>
-              <button
-                type='submit'
-                className='text-white bg-ouro hover:bg-ouro/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
-                onClick={handlePush}>
-                  
-                    <Link href="/" className=''></Link>
-                
-
-              Cadastrar
-            
-
-                
-              </button>
-                  
+              <Link
+                  href='/'
+                  className='text-white bg-ouro hover:bg-ouro/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+                >
+                  Confirmar Foto
+                </Link>
             </form>
           </div>
         </div>
       </div>
     </main>
   );
-  }
-
+}
