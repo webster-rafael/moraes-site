@@ -6,7 +6,7 @@ import DarkMode from "@/components/DarkMode";
 import Link from "next/link";
 
 export default function Sobre() {
-  const [name, setUserName] = useState("");
+  const [name, setUserName] = useState("Entrar");
   const [foto, setFoto] = useState(null);
 
   const handleSubmit = (event) => {
@@ -19,10 +19,10 @@ export default function Sobre() {
   return (
     <main className='w-full flex justify-center items-center h-screen overflow-hidden'>
       <DarkMode />
-      <div className='relative lg:flex items-center h-[45rem] lg:w-4/6 dark:bg-slate-800 bg-slate-950 shadow-lg shadow-black/80 rounded-lg'>
+      <div className='relative lg:flex items-center h-[45rem] lg:h-[35rem] desktop:h-[45rem] lg:w-4/6 dark:bg-slate-800 bg-slate-950 shadow-lg shadow-black/80 rounded-lg'>
         <div className='w-3/6 hidden md:block'>
           <img
-            className='h-[45rem] w-full rounded-t-lg shadow-lg shadow-black/90'
+            className='h-[45rem] lg:h-[35rem] desktop:h-[45rem] w-full rounded-t-lg shadow-lg shadow-black/90'
             src='https://dwvapp.b-cdn.net/1680541410039_de244f07-6f22-4328-8428-6ce91f3360ff.jpg'
             alt=''
           />
@@ -40,7 +40,7 @@ export default function Sobre() {
           <div className='w-full flex items-center uppercase gap-2'>
             <img
               className='size-10 lg:size-14 rounded-full p-0.5 bg-black'
-              src='/Moraes/logo.png'
+              src='Moraes/logo.png'
               alt=''
             />
             <span className='text-white text-lg font-jakarta font-medium'>
@@ -54,7 +54,7 @@ export default function Sobre() {
               Faça seu Login
             </h1>
           </div>
-          <div>
+          <div className=''>
             <form
               onSubmit={handleSubmit}
               className='flex flex-col gap-3 w-full mx-auto md:max-w-[30rem]'

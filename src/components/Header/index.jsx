@@ -8,6 +8,7 @@ import { MdDesignServices } from "react-icons/md";
 import { MdContactSupport } from "react-icons/md";
 import { MdContactPhone } from "react-icons/md";
 import { useContext, useEffect, useState } from "react";
+import Link from 'next/link';
 
 export function Header() {
   const [userName, setUserName] = useState("");
@@ -31,7 +32,7 @@ export function Header() {
         <div className='flex gap-1 items-center w-full h-20 rounded-full'>
           <img
             className='size-10 lg:size-14 rounded-full p-0.5 bg-black'
-            src='/Moraes/logo.png'
+            src='Moraes/logo.png'
             alt=''
           />
           <div className='hidden md:flex justify-center items-center pl-2 font-Aniyah text-md'>
@@ -150,9 +151,9 @@ export function Header() {
         <a href=''></a>
         <span className='text-black dark:text-white/90 text-xs lg:text-base font-medium'>
           Bem-Vindo,{" "}
-          <span className='text-xs lg:text-base text-ouro dark:text-black p-2 px-2 rounded-md dark:bg-ouro bg-black font-semibold'>
+          <Link href='/login' className='text-xs lg:text-base text-ouro dark:text-black p-2 px-2 rounded-md dark:bg-ouro bg-black font-semibold'>
             {userName}
-          </span>
+          </Link>
         </span>
         <img
           className='size-10 rounded-full border border-ouro'
