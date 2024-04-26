@@ -27,7 +27,7 @@ export function Sobre() {
         <div className='w-full h-full flex items-end flex-col p-3'>
           <img
             className='flex items-start size-16'
-            src='/Moraes/icon-1.png'
+            src='Moraes/icon-1.png'
             alt=''
           />
           <div className='flex h-full flex-col tracking-tighter'>
@@ -43,7 +43,7 @@ export function Sobre() {
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <img
             className='flex items-end size-16'
-            src='/Moraes/icon-2.png'
+            src='Moraes/icon-2.png'
             alt=''
           />
           <div className='flex h-full flex-col tracking-tighter'>
@@ -59,7 +59,7 @@ export function Sobre() {
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <img
             className='flex items-end size-16'
-            src='/Moraes/icon-3.png'
+            src='Moraes/icon-3.png'
             alt=''
           />
           <div className='flex h-full flex-col tracking-tighter'>
@@ -75,7 +75,7 @@ export function Sobre() {
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <img
             className='flex items-end size-16'
-            src='/Moraes/icon-4.png'
+            src='Moraes/icon-4.png'
             alt=''
           />
           <div className='flex h-full flex-col tracking-tighter'>
