@@ -32,7 +32,7 @@ export function Header() {
         <div className='flex gap-1 items-center w-full h-20 rounded-full'>
           <img
             className='size-10 lg:size-14 rounded-full p-0.5 bg-black'
-            src='Moraes/logo.png'
+            src='/Moraes/logo.png'
             alt=''
           />
           <div className='hidden md:flex justify-center items-center pl-2 font-Aniyah text-md'>
@@ -90,7 +90,7 @@ export function Header() {
 
               <a
                 className='text-white/80 hover:bg-slate-900 overflow-hidden object-contain flex gap-3 items-center px-3 py-5 w-full antialiased text-sm'
-                href=''
+                href='https://api.whatsapp.com/send?phone=5547997261914&text=Ol%C3%A1,%20Gostaria%20de%20Saber%20mais'
               >
                 <span>
                   <MdContactPhone color='#DAA520' size='25' />
@@ -112,21 +112,21 @@ export function Header() {
         )}
       </div>
       <nav className='lg:flex items-center px-2 text-center bg-gray-950 h-16 windscreen:w-[35%] rounded-lg mx-auto justify-center text-sm gap-8 uppercase hidden desktop:w-[40%]'>
-        <a
+        <Link
           className='flex justify-center px-1 text-center items-center gap-1 font-medium rounded-lg w-20 py-3 bg-zinc-700'
-          href=''
+          href='/'
         >
           <span>
             <IoHome color='#fff' size='18' />
           </span>
           Início
-        </a>
-        <a
+        </Link>
+        <Link
           className='flex items-center justify-center px-1 gap-1 font-medium rounded-lg w-20 py-3 hover:bg-zinc-700'
-          href=''
+          href='/#residence'
         >
           Imóveis
-        </a>
+        </Link>
         <a
           className='flex items-center justify-center px-1 gap-1 font-medium rounded-lg w-20 py-3 hover:bg-zinc-700'
           href=''

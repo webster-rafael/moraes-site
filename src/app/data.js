@@ -157,7 +157,7 @@ export const apartmentData = [
     "suítes": "3",
     "estacionamento": "2",
     "foto": "https://dwvapp.b-cdn.net/images/developments/67d8bc0d-b64a-49a2-b038-9cbc07450639/galleries/pictures/002_LE_VOYAGE_FACHADA_DIURNA_ANGULO_FINAL.jpg-name-fb7cdaf3338d5ba92973aa668f123f2e159895426bce2ccf00eb86daf0bc852d.jpg",
-    "link": "https://hotsite.dwvapp.com.br/landingpage/67d8bc0d-b64a-49a2-b038-9cbc07450639/78d6e824-dc75-4c10-84dd-f87d1fdd8dd1"
+    "link": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3550.7125952286838!2d-48.602619!3d-27.133861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDA4JzAxLjkiUyA0OMKwMzYnMDkuNCJX!5e0!3m2!1spt-BR!2sbr!4v1714182871284!5m2!1spt-BR!2sbr"
   },
   
   {

@@ -24,7 +24,7 @@ function DarkMode() {
 
   
   return (
-    <div onClick={() => setDarkMode(!darkMode)} className='fixed z-10 top-[5rem] lg:mt-0 mt-1 lg:top-24 windscreen:top-28 right-2 md:right-2 w-16 h-8 flex items-center rounded-full p-1 dark:bg-ouro bg-slate-950 cursor-pointer'>
+    <div onClick={() => setDarkMode(!darkMode)} className='fixed z-10 top-[5rem] lg:mt-0 mt-1 lg:top-40 windscreen:top-28 right-2 md:right-2 w-16 h-8 flex items-center rounded-full p-1 dark:bg-ouro bg-slate-950 cursor-pointer'>
         
         <IoMoonSharp className='text-white' size={18} />
         <div className='absolute bg-white dark:bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300' style={darkMode ? {left: '2px'} : {right: '2px'} }>

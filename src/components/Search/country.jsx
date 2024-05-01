@@ -9,6 +9,7 @@ import { HouseContext } from "./houseContext";
 export function Country() {
   const { cidade, setCidade, cidades } = useContext(HouseContext);
   useContext(HouseContext);
+  const sortedCidades = [...cidades].sort((a, b) => a.localeCompare(b));
 
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -30,7 +31,7 @@ export function Country() {
       </Menu.Button>
 
       <Menu.Items className='dropdown-menu'>
-        {cidades.map((cidade, index) => {
+        {sortedCidades.map((cidade, index) => {
           return (
             <Menu.Item
               onClick={() => setCidade(cidade)}

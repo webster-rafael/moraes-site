@@ -92,9 +92,9 @@ export default function Info({ params }) {
                 </div>
               </div>
 
-              <div className=''>
+              <div className='h-screen md:h-full'>
                 <iframe
-                  className='w-full lg:h-[29rem] desktop:h-[46.52rem]'
+                  className='w-full h-[100%] lg:h-[29rem] desktop:h-[46.52rem]'
                   src={data.link}
                   style={{ border: 0 }}
                   allowFullScreen=''

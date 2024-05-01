@@ -90,7 +90,7 @@ export function DataPrevisão() {
             <span className='md:text-5xl font-semibold'>
               {Math.round(weather.main.temp)}°
             </span>
-            <h3 className='flex text-center w-full mx-auto justify-center text-sm text-ouro'>
+            <h3 className='flex text-center w-full mx-auto justify-center text-xs text-ouro'>
               ({weatherDescription})
             </h3>
           </div>
