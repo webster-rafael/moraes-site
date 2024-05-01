@@ -75,7 +75,7 @@ export function Sobre() {
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <img
             className='flex items-end size-16'
-            src='public/Moraes/icon-4.png'
+            src='/Moraes/icon-4.png'
             alt=''
           />
           <div className='flex h-full flex-col tracking-tighter'>
