@@ -8,6 +8,8 @@ import { MdDesignServices } from "react-icons/md";
 import { MdContactSupport } from "react-icons/md";
 import { MdContactPhone } from "react-icons/md";
 import { useContext, useEffect, useState } from "react";
+import { FaUserCircle } from "react-icons/fa";
+
 import Link from 'next/link';
 
 export function Header() {
@@ -151,12 +153,12 @@ export function Header() {
         <span className='text-black dark:text-white/90 text-xs lg:text-base font-medium'>
           Bem-Vindo,{" "}
           <Link href='/login' className='text-xs lg:text-base text-ouro dark:text-black p-2 px-2 rounded-md dark:bg-ouro bg-black font-semibold'>
-            {userName}
+            {userName ? userName : 'Login'}
           </Link>
         </span>
         <img
           className='size-10 rounded-full border border-ouro'
-          src={userPhoto}
+          src={userPhoto ? userPhoto : '/Moraes/Users.png'}
           alt=''
         />
       </div>
