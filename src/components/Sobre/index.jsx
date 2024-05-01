@@ -1,5 +1,6 @@
 import { SiHomebridge } from "react-icons/si";
 import { MdContactSupport } from "react-icons/md";
+import Image from 'next/image';
 
 export function Sobre() {
   return (
@@ -57,9 +58,9 @@ export function Sobre() {
           </div>
         </div>
         <div className=' w-full h-full flex items-end flex-col p-3'>
-          <img
+          <Image
             className='flex items-end size-16'
-            src='../public/Moraes/icon-3.png'
+            src='public/Moraes/icon-3.png'
             alt=''
           />
           <div className='flex h-full flex-col tracking-tighter'>
@@ -73,7 +74,7 @@ export function Sobre() {
           </div>
         </div>
         <div className=' w-full h-full flex items-end flex-col p-3'>
-          <img
+          <Image
             className='flex items-end size-16'
             src='/Moraes/icon-4.png'
             alt=''
