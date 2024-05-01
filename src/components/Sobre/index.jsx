@@ -60,8 +60,8 @@ export function Sobre() {
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <Image
             className='flex items-end size-16'
-            src='public/Moraes/icon-3.png'
-            alt=''
+            src='/public/Moraes/icon-3.png'
+            alt='icone 3'
           />
           <div className='flex h-full flex-col tracking-tighter'>
             <h1 className='font-semibold text-start w-full text-xl pb-5'>
@@ -77,7 +77,7 @@ export function Sobre() {
           <Image
             className='flex items-end size-16'
             src='/Moraes/icon-4.png'
-            alt=''
+            alt='icone controle'
           />
           <div className='flex h-full flex-col tracking-tighter'>
             <h1 className='font-semibold text-start w-full text-xl pb-5'>
