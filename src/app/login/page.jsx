@@ -19,7 +19,7 @@ export default function Sobre() {
   return (
     <main className='w-full flex justify-center items-center h-screen lg:h-screen overflow-hidden'>
       <DarkMode />
-      <div className='relative lg:flex items-center h-full lg:h-[35rem] desktop:h-[45rem] lg:w-4/6 dark:bg-slate-800 bg-slate-950 shadow-lg shadow-black/80 rounded-lg'>
+      <div className='relative lg:flex items-center h-full lg:h-[35rem] desktop:h-[45rem] lg:w-4/6 dark:bg-slate-800 bg-slate-950 shadow-lg shadow-black/80 lg:rounded-lg'>
         <div className='w-3/6 hidden md:block'>
           <img
             className='h-[45rem] lg:h-[35rem] desktop:h-[45rem] w-full rounded-t-lg shadow-lg shadow-black/90'
