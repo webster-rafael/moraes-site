@@ -127,12 +127,12 @@ export function Header() {
         >
           Imóveis
         </Link>
-        <a
+        <Link
           className='flex items-center justify-center px-1 gap-1 font-medium rounded-lg w-20 py-3 hover:bg-zinc-700'
-          href=''
+          href='/#services'
         >
           Serviços
-        </a>
+        </Link>
         <a
           className='flex items-center justify-center px-1 gap-1 font-medium rounded-lg w-20 py-3 hover:bg-zinc-700'
           href=''

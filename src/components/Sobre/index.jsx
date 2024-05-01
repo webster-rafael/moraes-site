@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export function Sobre() {
   return (
-    <div className='relative flex items-start md:items-center md:w-5/6 h-[70rem] lg:h-[45rem] dark:bg-slate-800 bg-zinc-200 shadow-lg m-auto'>
+    <div id='services' className='relative flex items-start md:items-center md:w-5/6 h-[70rem] lg:h-[45rem] dark:bg-slate-800 bg-zinc-200 shadow-lg m-auto'>
       <div className='lg:w-3/6'>
         <img
           className='hidden md:flex h-[45rem] w-full rounded-t-lg shadow-lg shadow-black/90'
@@ -27,8 +27,10 @@ export function Sobre() {
       <div className='lg:w-4/6 grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 h-screen lg:h-[40rem] font-jakarta dark:text-zinc-50 md:relative'>
         <div className='w-full h-full flex items-end flex-col p-3'>
           <Image
-            className='flex items-start size-16'
-            src='/Moraes/icon-1.png'
+           width={50}
+           height={50}
+            className='flex items-start'
+            src='/Moraes/Icon-1.png'
             alt='Icone de Seguro'
           />
           <div className='flex h-full flex-col tracking-tighter'>
@@ -43,7 +45,9 @@ export function Sobre() {
         </div>
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <Image
-            className='flex items-end size-16'
+          width={50}
+          height={50}
+            className='flex items-end'
             src='/Moraes/Icon-2.png'
             alt='Icone de Preço'
           />
@@ -59,7 +63,9 @@ export function Sobre() {
         </div>
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <Image
-            className='flex items-end size-16'
+          width={50}
+          height={50}
+            className='flex items-end'
             src='/Moraes/Icon-3.png'
             alt='Icone de comissão'
           />
@@ -75,7 +81,9 @@ export function Sobre() {
         </div>
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <Image
-            className='flex items-end size-16'
+          width={50}
+          height={50}
+            className='flex items-end'
             src='/Moraes/Icon-4.png'
             alt='Ícone controle'
           />
