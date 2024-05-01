@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export function Sobre() {
   return (
-    <div id='services' className='relative flex items-start md:items-center md:w-5/6 h-[70rem] lg:h-[45rem] dark:bg-slate-800 bg-zinc-200 shadow-lg m-auto'>
+    <div className='relative flex items-start md:items-center md:w-5/6 h-[70rem] lg:h-[45rem] dark:bg-slate-800 bg-zinc-200 shadow-lg m-auto'>
       <div className='lg:w-3/6'>
         <img
           className='hidden md:flex h-[45rem] w-full rounded-t-lg shadow-lg shadow-black/90'
