@@ -64,7 +64,6 @@ export function Header() {
                 href=''
               >
                 <span>
-                  ''
                   <IoHome color='#DAA520' size='25' />
                 </span>
                 Início
