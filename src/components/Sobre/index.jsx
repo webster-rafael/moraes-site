@@ -26,10 +26,10 @@ export function Sobre() {
 
       <div className='lg:w-4/6 grid grid-cols-1 lg:grid-cols-2 gap-10 p-10 h-screen lg:h-[40rem] font-jakarta dark:text-zinc-50 md:relative'>
         <div className='w-full h-full flex items-end flex-col p-3'>
-          <img
+          <Image
             className='flex items-start size-16'
-            src='/public/Moraes/icon-1.png'
-            alt=''
+            src='/Moraes/icon-1.png'
+            alt='Icone de Seguro'
           />
           <div className='flex h-full flex-col tracking-tighter'>
             <h1 className='font-semibold text-start w-full text-xl pb-5'>
@@ -42,10 +42,10 @@ export function Sobre() {
           </div>
         </div>
         <div className=' w-full h-full flex items-end flex-col p-3'>
-          <img
+          <Image
             className='flex items-end size-16'
-            src='/public/Moraes/icon-2.png'
-            alt=''
+            src='/Moraes/Icon-2.png'
+            alt='Icone de Preço'
           />
           <div className='flex h-full flex-col tracking-tighter'>
             <h1 className='font-semibold text-start w-full text-xl pb-5'>
@@ -61,7 +61,7 @@ export function Sobre() {
           <Image
             className='flex items-end size-16'
             src='/Moraes/Icon-3.png'
-            alt='icone 3'
+            alt='Icone de comissão'
           />
           <div className='flex h-full flex-col tracking-tighter'>
             <h1 className='font-semibold text-start w-full text-xl pb-5'>
@@ -76,8 +76,8 @@ export function Sobre() {
         <div className=' w-full h-full flex items-end flex-col p-3'>
           <Image
             className='flex items-end size-16'
-            src='/Moraes/icon-4.png'
-            alt='icone controle'
+            src='/Moraes/Icon-4.png'
+            alt='Ícone controle'
           />
           <div className='flex h-full flex-col tracking-tighter'>
             <h1 className='font-semibold text-start w-full text-xl pb-5'>
