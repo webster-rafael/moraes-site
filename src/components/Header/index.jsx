@@ -8,7 +8,6 @@ import { MdDesignServices } from "react-icons/md";
 import { MdContactSupport } from "react-icons/md";
 import { MdContactPhone } from "react-icons/md";
 import { useContext, useEffect, useState } from "react";
-import { FaUserCircle } from "react-icons/fa";
 
 import Link from 'next/link';
 
@@ -37,7 +36,7 @@ export function Header() {
             src='/Moraes/logo.png'
             alt=''
           />
-          <div className='hidden md:flex justify-center items-center pl-2 font-Aniyah text-md'>
+          <div className='hidden md:flex justify-center items-center pl-2 font-Aniyah text-sm desktop:text-md'>
             <span className=' w-full xl:items-center gap-1 font-bold dark:text-ouro text-black'>
               Bela Santa Catarina
               <span />
@@ -112,7 +111,7 @@ export function Header() {
           </div>
         )}
       </div>
-      <nav className='lg:flex items-center px-2 text-center bg-gray-950 h-16 windscreen:w-[35%] rounded-lg mx-auto justify-center text-sm gap-8 uppercase hidden desktop:w-[40%]'>
+      <nav className='lg:flex items-center px-2 text-center bg-gray-950 h-16 windscreen:w-[25%] rounded-lg mx-auto justify-center text-sm gap-8 uppercase hidden desktop:w-[20%]'>
         <Link
           className='flex justify-center px-1 text-center items-center gap-1 font-medium rounded-lg w-20 py-3 bg-zinc-700'
           href='/'
@@ -128,18 +127,7 @@ export function Header() {
         >
           Imóveis
         </Link>
-        <Link
-          className='flex items-center justify-center px-1 gap-1 font-medium rounded-lg w-20 py-3 hover:bg-zinc-700'
-          href='/#services'
-        >
-          Serviços
-        </Link>
-        <a
-          className='flex items-center justify-center px-1 gap-1 font-medium rounded-lg w-20 py-3 hover:bg-zinc-700'
-          href=''
-        >
-          Equipe
-        </a>
+       
         <a
           className='flex items-center justify-center px-1 gap-1 font-medium rounded-lg w-20 py-3 hover:bg-zinc-700'
           href='https://api.whatsapp.com/send?phone=5547997261914&text=Ol%C3%A1,%20Gostaria%20de%20Saber%20mais'
