@@ -2777,6 +2777,26 @@ export const apartmentData = [
     "estacionamento": "2",
     "foto": "https://dwvapp.b-cdn.net/1627042415141_e29d2d63-f602-4f6f-8579-4e52f41aca58.jpeg",
     "link": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3550.1539828319997!2d-48.588336999999996!3d-27.151445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDA5JzA1LjIiUyA0OMKwMzUnMTguMCJX!5e0!3m2!1spt-BR!2sbr!4v1715038173842!5m2!1spt-BR!2sbr"
+  },
+
+  {
+    "id": 141,
+    "residencial": "Raffaele Vinci",
+    "valor": "2.524.184,98",
+    "construtora": "Asael",
+    "términoObra": "Dezembro/27",
+    "cidade": "Porto Belo",
+    "estado": "SC",
+    "rua": "R. Nilvio L. da Silva",
+    "número": "0",
+    "bairro": "Perequê",
+    "metragem": "119.50m²",
+    "dormitórios": "3",
+    "banheiros": "0",
+    "suítes": "3",
+    "estacionamento": "2",
+    "foto": "https://dwvapp.b-cdn.net/1639661448332_24035b91-c843-4e10-83ea-a0bbf421915a.jpg",
+    "link": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3550.0908383487845!2d-48.574878999999996!3d-27.153431999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDA5JzEyLjQiUyA0OMKwMzQnMjkuNiJX!5e0!3m2!1spt-BR!2sbr!4v1715039936295!5m2!1spt-BR!2sbr"
   }
 
 ];
