@@ -53,7 +53,7 @@ export function Apartamentos({ residencia }) {
         <div className='flex justify-center items-center text-lg font-semibold text-white'>
           R${residencia.valor}
         </div>
-        <div className='flex justify-center items-center text-black/80 font-semibold bg-ouro rounded-full px-2 uppercase'>
+        <div className='flex justify-center items-center text-black/80 text-sm font-semibold bg-ouro rounded-full px-3 py-1 uppercase'>
           {residencia.construtora}
         </div>
       </div>
