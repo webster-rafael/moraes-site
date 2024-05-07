@@ -2797,6 +2797,46 @@ export const apartmentData = [
     "estacionamento": "2",
     "foto": "https://dwvapp.b-cdn.net/1639661448332_24035b91-c843-4e10-83ea-a0bbf421915a.jpg",
     "link": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3550.0908383487845!2d-48.574878999999996!3d-27.153431999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDA5JzEyLjQiUyA0OMKwMzQnMjkuNiJX!5e0!3m2!1spt-BR!2sbr!4v1715039936295!5m2!1spt-BR!2sbr"
+  },
+
+  {
+    "id": 142,
+    "residencial": "Efraim",
+    "valor": "1.214.979,79",
+    "construtora": "Asael",
+    "términoObra": "Dezembro/26",
+    "cidade": "Itapema",
+    "estado": "SC",
+    "rua": "Rua 304",
+    "número": "368",
+    "bairro": "Meia Praia",
+    "metragem": "212.00m²",
+    "dormitórios": "2",
+    "banheiros": "3",
+    "suítes": "2",
+    "estacionamento": "1",
+    "foto": "https://dwvapp.b-cdn.net/1694007609650_ef950d78-31b1-4b48-b6ae-2ceeb675a606.jpg",
+    "link": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3550.510032047994!2d-48.5974441!3d-27.1402385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDA4JzI0LjkiUyA0OMKwMzUnNTAuOCJX!5e0!3m2!1spt-BR!2sbr!4v1715040178534!5m2!1spt-BR!2sbr"
+  },
+
+  {
+    "id": 143,
+    "residencial": "Number One",
+    "valor": "1.248.553,47",
+    "construtora": "Asael",
+    "términoObra": "Março/25",
+    "cidade": "Tijucas",
+    "estado": "SC",
+    "rua": "R. Almeida J. Koch",
+    "número": "39",
+    "bairro": "Centro",
+    "metragem": "138.62m²",
+    "dormitórios": "3",
+    "banheiros": "0",
+    "suítes": "3",
+    "estacionamento": "2",
+    "foto": "https://dwvapp.b-cdn.net/1639656128625_a051c9b3-f2e6-44ed-94b8-996e571f3f08.jpg",
+    "link": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3547.4614661181595!2d-48.63384869999999!3d-27.236052899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDE0JzA5LjgiUyA0OMKwMzgnMDEuOSJX!5e0!3m2!1spt-BR!2sbr!4v1715040328388!5m2!1spt-BR!2sbr"
   }
 
 ];
