@@ -60,33 +60,25 @@ export function Header() {
             id='menu'
           >
             <nav className='w-full'>
-              <a
+              <Link
                 className='text-white/80 hover:bg-slate-900 rounded-t-xl overflow-hidden object-contain flex gap-3 items-center px-3 py-5 w-full antialiased text-sm'
-                href=''
+                href='/'
               >
                 <span>
                   <IoHome color='#DAA520' size='25' />
                 </span>
                 Início
-              </a>
-              <a
+              </Link>
+              <Link
                 className='text-white/80 hover:bg-slate-900 overflow-hidden object-contain flex gap-3 items-center px-3 py-4 w-full antialiased text-sm'
-                href='/Residenciais'
+                href='/#residence'
               >
                 <span>
                   <MdApartment color='#DAA520' size='25' />
                 </span>
                 Imóveis
-              </a>
-              <a
-                className='text-white/80 hover:bg-slate-900 overflow-hidden object-contain flex gap-3 items-center px-3 py-5 w-full antialiased text-sm'
-                href=''
-              >
-                <span>
-                  <MdDesignServices color='#DAA520' size='25' />
-                </span>
-                Serviços
-              </a>
+              </Link>
+            
 
               <a
                 className='text-white/80 hover:bg-slate-900 overflow-hidden object-contain flex gap-3 items-center px-3 py-5 w-full antialiased text-sm'

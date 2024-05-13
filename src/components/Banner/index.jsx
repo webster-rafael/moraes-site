@@ -21,9 +21,6 @@ export function Banner() {
                     <h1 className='text-3xl dark:text-white/90 lg:text-[50px] font-semibold leading-none mb-6'>
                         <span className='text-ouro'>Compre</span> o Imóvel Dos Seus Sonhos Conosco.
                     </h1>
-                    <p className='max-w-[480px] dark:text-white/80 mb-8 '>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga exercitationem ipsum magni, architecto sint aut deserunt sequi. Nesciunt possimus incidunt sint minus velit numquam natus rerum veritatis suscipit aliquam.
-                    </p>
                 </div>
                 <div className='flex-1 flex justify-end items-end mt-10'>
                     <img className='h-auto lg:w-[600px] lg:h-[530px] desktop:h-[700px] rounded-tl-[80px] rounded-br-[80px] lg:rounded-tl-[30%] w-[90%] lg:mx-0 mx-auto lg:rounded-br-[30%]' src={`Moraes/banner-${currentBanner}.jpg`} alt="Banner do Site" />
