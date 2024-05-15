@@ -25,6 +25,12 @@ export default function Info({ params }) {
     setGaleryOpen(!galeryOpen);
   };
 
+  function enviarMensagem() {
+    var mensagem = `Olá, gostaria de saber sobre o imóvel ${data.residencial}, localizado na cidade de ${data.cidade}.`;
+    var url = `https://api.whatsapp.com/send?phone=5547997261914&text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  }
+
   return (
     <>
       <Header />
@@ -71,25 +77,28 @@ export default function Info({ params }) {
             </div>
             <div className='flex flex-1 flex-col'>
               <div className='flex justify-between items-center h-20 md:px-4 desktop:px-4 lg:px-4 bg-slate-950'>
-                <div className='lg:flex items-center justify-center my-auto gap-2'>
+                <div className='lg:flex items-center justify-center my-auto gap-2 px-2'>
                   <h2 className='windscreen:text-2xl xl:text-lg text-xs font-semibold text-white'>
                     {data.residencial}
                   </h2>
-                  <h3 className='windscreen:text-lg xl:text-base text-xs bg-ouro text-white px-1 text-center rounded-lg uppercase font-semibold py-1'>
+                  <h3 className='windscreen:text-lg xl:text-base text-xs bg-ouro text-white px-1 text-center rounded-lg lg:uppercase font-semibold py-1'>
                     {data.cidade}
                   </h3>
                 </div>
                 <div className=' lg:mb-0 flex xl:flex-row items-end py-0 md:items-center gap-x-2 text-xs md:py-4 lg:py-0'>
-                  <div className='bg-green-500 lg:text-xs h-8 md:h-10 items-center flex text-white px-2 lg:px-3 rounded-full'>
-                    {data.rua}, N-{data.número}
-                  </div>
-                  <div className='bg-green-500 h-8 md:h-10 items-center flex text-white px-2 lg:px-3 rounded-full'>
-                    {data.bairro}
+                  <div className='flex flex-col lg:flex-row gap-2 justify-center items-center'>
+                    <div className='bg-green-500 text-xs lg:text-xs h-8 md:h-10 items-center flex text-white px-2 lg:px-3 rounded-full'>
+                      {data.rua}, N-{data.número}
+                    </div>
+                    <div className='bg-violet-500 h-8 md:h-10 items-center flex text-white px-2 lg:px-3 rounded-full'>
+                      {data.bairro}
+                    </div>
                   </div>
                 </div>
-                <div className='desktop:text-3xl lg:text-xl xl:text-2xl text-xs flex flex-col my-auto font-semibold text-ouro'>
+                <button
+                onClick={enviarMensagem}  className='desktop:text-2xl lg:text-lg xl:text-xl text-xs flex flex-col my-auto font-semibold bg-ouro px-3 py-1 rounded-lg text-white hover:transition hover:scale-105 hover:bg-yellow-600'>
                   R${data.valor}
-                </div>
+                </button>
               </div>
 
               <div className='h-screen md:h-full'>

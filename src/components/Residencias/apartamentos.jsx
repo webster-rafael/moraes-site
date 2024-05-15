@@ -1,9 +1,16 @@
+import Link from "next/link";
 import { BiBed, BiBath, BiArea } from "react-icons/bi";
 import { MdOutlineBathroom } from "react-icons/md";
 
 export function Apartamentos({ residencia }) {
+
+  function enviarMensagem() {
+    var mensagem = `Olá, gostaria de saber sobre o imóvel ${residencia.residencial}, localizado na cidade de ${residencia.cidade}.`;
+    var url = `https://api.whatsapp.com/send?phone=5547997261914&text=${encodeURIComponent(mensagem)}`;
+    window.location.href = url;
+  }
   return (
-    <div
+    <section
       className='bg-slate-900 shadow-md p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto cursor-pointer hover:shadow-2xl transition'
       id='residence'
     >
@@ -51,12 +58,18 @@ export function Apartamentos({ residencia }) {
       </div>
       <div className='h-full flex justify-between items-center my-2'>
         <div className='flex justify-center items-center text-lg font-semibold text-white'>
-          R${residencia.valor}
+          <button
+            onClick={enviarMensagem}
+            className='px-4 py-1 bg-ouro rounded-lg'
+            href={`https://api.whatsapp.com/send?phone=5547997261914&text=Ol%C3%A1,%20gostaria%20de%20saber%20sobre%20o%20im%C3%B3vel%20${residencia.residencial},%20localizado%20na%20cidade%20de%20${residencia.cidade}.`}
+          >
+         R${residencia.valor}
+          </button>
         </div>
         <div className='flex justify-center items-center text-black/80 text-sm font-semibold bg-ouro rounded-full px-3 py-1 uppercase'>
           {residencia.construtora}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
