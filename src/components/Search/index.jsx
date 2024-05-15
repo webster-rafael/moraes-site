@@ -10,7 +10,7 @@ export function Search() {
   const { handleClick } = useContext(HouseContext);
 
   return (
-    <div className='px-[30px] py-6 lg:py-4 desktop:py-6 max-w-2xl desktop:max-w-4xl lg:ml-5 desktop:ml-10 flex flex-col lg:flex-row justify-between gap-4 lg:gap-x-3 relative lg:-top-28 desktop:-top-10 lg:shadow-lg dark:bg-ouro bg-white lg:backdrop-blur rounded-lg'>
+    <div className='px-[30px] py-6 lg:py-4 desktop:py-6 max-w-2xl desktop:max-w-auto lg:ml-5 desktop:ml-10 flex flex-col lg:flex-row justify-between gap-4 lg:gap-x-3 relative lg:-top-28 desktop:-top-10 lg:shadow-lg dark:bg-ouro bg-white lg:backdrop-blur rounded-lg'>
       <Country />
       {/* <Property /> */}
       {/* <PriceRange /> */}
