@@ -25,18 +25,6 @@ export default function Home() {
           <Residencia />
         </section>
 
-        <section id='services' className='flex flex-col items-center windscreen:max-w-[1566px] mx-auto lg:my-20 h-full lg:h-[52rem] bg-zinc-200 dark:bg-slate-900 pt-10'>
-          <div>
-            <h1 className='flex justify-center w-full gap-2 items-center text-slate-950 dark:text-white/90 text-xl lg:text-2xl desktop:text-3xl antialiased text-center py-2 font-semibold font-Roboto'>
-              Pensando na sua Empresa{" "}
-              <span className='text-ouro'>
-                <MdLocationOn />
-              </span>
-            </h1>
-          </div>
-          <Sobre />
-        </section>
-
         <Footer />
       </main>
     </section>
